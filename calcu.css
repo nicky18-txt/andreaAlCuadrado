@@ -1,0 +1,96 @@
+.calculator {
+  width: 340px;
+  margin: 50px auto;
+  padding: 18px;
+  border-radius: 24px;
+  background: #fff5fb;
+  box-shadow: 0 14px 28px rgba(242, 20, 179, 0.22);
+  position: relative;
+}
+
+#display {
+  width: 92.5%;
+  height: 70px;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  text-align: right;
+  padding: 12px;
+  border: 1px solid #f2cfe2;
+  border-radius: 16px;
+  background: #fff;
+  color: #4a1e3d;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 62px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  background: #ffe8f6;
+  color: #4a1e3d;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #ffd5ee;
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(244, 130, 187, 0.45);
+  outline-offset: 2px;
+}
+
+.operator {
+  background: #ff8ab8;
+  color: #ffffff;
+}
+
+.operator:hover {
+  background: #f368a3;
+}
+
+.equals {
+  background: #7ed6b7;
+  color: #173a31;
+}
+
+.equals:hover {
+  background: #64c8a6;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+#musicBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 5px 8px;
+  background-color: #f0edf1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+#musicBtn:hover {
+  background-color: #ffffff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
